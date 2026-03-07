@@ -4,7 +4,9 @@
 <title>Shafi Digital Solutions</title>
 
 <style>
-
+html{
+scroll-behavior:smooth;
+}
 body{
 margin:0;
 font-family:Arial;
@@ -123,18 +125,97 @@ text-align:center;
 padding:20px;
 background:#020617;
 }
+.hero{
+height:70vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+url("https://images.unsplash.com/photo-1498050108023-c5249f4df085");
+background-size:cover;
+background-position:center;
+padding:20px;
+}
 
+.hero h1{
+font-size:48px;
+color:#38bdf8;
+margin-bottom:10px;
+}
+
+.hero p{
+max-width:600px;
+margin-bottom:20px;
+}
+
+.hero-btn{
+background:#38bdf8;
+color:black;
+padding:12px 25px;
+border-radius:6px;
+text-decoration:none;
+font-weight:bold;
+}
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 40px;
+background:#020617;
+position:sticky;
+top:0;
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+color:#38bdf8;
+}
+
+.nav-links{
+list-style:none;
+display:flex;
+gap:20px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:white;
+font-weight:bold;
+}
 </style>
 </head>
 
 <body>
+<nav class="navbar">
 
+<div class="logo">Shafi Digital</div>
+
+<ul class="nav-links">
+<li><a href="#about">About</a></li>
+<li><a href="#portfolio">Portfolio</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+<section class="hero">
+
+<h1>We Build Modern Business Websites</h1>
+
+<p>Professional website design for restaurants, salons, gyms and local businesses in UAE.</p>
+
+<a href="https://wa.me/971564663842" class="hero-btn">Start Your Website</a>
+
+</section>
 <header>
 <h1>Shafi Digital Solutions</h1>
 <p>Modern Websites for Businesses</p>
 </header>
 
-<section class="about">
+<section class="about"  id="about">
 
 <h2>About Us</h2>
 
@@ -146,7 +227,7 @@ grow online with high quality websites.
 
 </section>
 
-<section class="projects">
+<section class="projects"  id="Portfolio">
 
 <div class="card">
 <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5">
@@ -185,7 +266,7 @@ grow online with high quality websites.
 
 </section>
 
-<section class="services">
+<section class="services" id="services">
 
 <h2>Our Services</h2>
 
@@ -209,7 +290,7 @@ grow online with high quality websites.
 </div>
 
 </section>
-
+<footer id="contact">
 <footer>
 <p>© 2026 Shafi Digital Solutions | UAE</p>
 </footer>
